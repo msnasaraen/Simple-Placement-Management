@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>User</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/polyfill.js"></script>
+    <script src="js/fetchstudent.js"></script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="logo">
+            <a href="#">EP</a>
+        </div>
+        <div class="logout">
+            <a href="logout.html">Logout</a>
+        </div>
+        <div class="logout">
+            <div id="username"></div>
+        </div>
+
+        <div class="logo1">
+            <a href="#">EASY PLACEMENTS</a>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="sidebar">
+            <ul id="nav">
+
+                <li>
+                    <a href="company-addDetails.html"> <i class="fa fa-plug" aria-hidden="true"></i> Update Details
+                    </a>
+                </li>
+                <li>
+                    <a class="selected" href="FetchStudents.html"> <i class="fa fa-plug" aria-hidden="true"></i> Fetch Students
+                    </a>
+                </li>
+                <li>
+                    <a href="send-email.html"> <i class="fa fa-plug" aria-hidden="true"></i> Send Email
+                    </a>
+                </li>
+                <li>
+                    <a href="allCompanies.html"> <i class="fa fa-plug" aria-hidden="true"></i> All Companies
+                    </a>
+                </li>
+                <div id="contact">
+                    <p>contact - William - 9566864382</p>
+                </div>
+            </ul>
+        </div>
+        <div id="content">
+            <table id="user-table">
+                <p id="userpageheading" value="SignUp">Fetch Students</p>
+                <form name="add" action="#" id="fetch">
+                    <tr>
+                        <td id="contactcell1">Company Name</td>
+                        <td>
+                            <input id="contactcell2" type="text" name="cname" placeholder="source here..." />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="contactcell1">Branch</td>
+                        <td>
+                            <select name="branch" id="contactcell2">
+                                <option id="contactcell2" value="CSE">COMPUTER SCIENCE AND ENGINEERING</option>
+                                <option id="contactcell2" value="IT">INFORMATION TECHNOLOGY</option>
+                                <option id="contactcell2" value="PROD">PRODUCTION ENGINEERING</option>
+                                <option id="contactcell2" value="MECH">MECHANICAL ENGINEERING</option>
+                                <option id="contactcell2" value="CIVIL">CIVIL ENGINEERING</option>
+                                <option id="contactcell2" value="EEE">ELECTRICAL AND ELECTRONICS ENGINEERING</option>
+                                <option id="contactcell2" value="EIE">ELECTRICAL AND INSTUMENTATION ENGINEERING</option>
+                                <option id="contactcell2" value="ECE">ELECTRONICS AND COMMUNICATION ENGINEERING</option>
+                                <option id="contactcell2" value="BIOTECH">BIO TECHNOLOGY</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+            <br>
+            <input type="button" name="submit_it" id="submit_it" value="Search">
+            <br />
+        </div>
+</body>
+
+</html>
